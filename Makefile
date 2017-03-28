@@ -1,4 +1,4 @@
-name = Notebook
+name = Geology_Journal
 all:
 	pdflatex  --shell-escape $(name).tex
 clean:
