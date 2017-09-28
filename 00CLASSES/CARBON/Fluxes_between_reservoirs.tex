@@ -1,0 +1,49 @@
+\documentclass[14pt]{article}
+\usepackage{amsmath}
+\usepackage{extsizes}
+\usepackage{graphicx}
+\usepackage{caption}
+
+%Gummi|065|=)
+\title{\textbf{Fluxes between reservoirs}}
+\date{}
+\begin{document}
+
+\section*{Fluxes between reservoirs}
+\thispagestyle{empty}
+\begin{enumerate}
+  \item Mantle to ocean ridges to atmosphere
+    \begin{equation*}
+      ^cF_{m-a} = \frac{^cM_m}{^cM_{m\,p}} \;^cF_{(m-a)\,p} \;\exp\Big(\frac{t_p - t}{t_f}\Big)
+    \end{equation*}
+  \item Atmosphere to Urey reaction to continental crust
+    \begin{equation*}
+      ^cF_{a-c\,c} = \frac{^cM_a}{\tau_{a-c\,c}} \quad or \quad \Big(\frac{^cM_{a\,t_1}}{\tau^{'}_{a-c\,c}}\Big)
+    \end{equation*}
+  \item Continental crust to subduction zone to atmosphere
+     \begin{equation*}
+       ^cF_{c\,c-a} = \frac{^cM_{c\,c}}{^cM_{c\,c\,p}} \;^cF_{(c\,c-a)\,p} \;\exp\Big({\frac{t_p - t}{t_f}}\Big)
+     \end{equation*}  
+  \item Continental crust to subduction zone to mantle
+    \begin{equation*}
+      ^cF_{c\,c-m} = \frac{^cM_{c\,c}}{^cM_{c\,c\,p}} \;^cF_{(c\,c-m)\,p} \;\exp\Big({\frac{t_p - t}{t_f}}\Big)
+    \end{equation*}
+  \item Mantle to ocean ridges to subduction zone to mantle
+    \begin{equation*}
+      ^cF_{m-m} = \frac{^cM_m}{^cM_{m\,p}} \;^cF_{(m-m)\,p} \;\exp\Big({\frac{t_p - t}{t_f}}\Big)
+    \end{equation*}
+  \item Continental crust to subduction zone to continental crust
+    \begin{equation*}
+      ^cF_{c\,c-c\,c} = \frac{^cM_{c\,c}}{^cM_{c\,c\,p}} \;^cF_{(c\,c-c\,c)p} \;\exp\Big({\frac{t_p - t}{t_f}}\Big)
+    \end{equation*}
+    
+\end{enumerate}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\linewidth]{/home/harsha_lv/CIG_codes/Geology_Journal/00CLASSES/CARBON/a_cc_m_triangle.jpg}
+    \centering
+    \caption*{\textbf{An illustration of the Carbon reservoir model}}
+\end{figure}
+
+\end{document}

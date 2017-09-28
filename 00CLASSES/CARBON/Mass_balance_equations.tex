@@ -1,0 +1,44 @@
+\documentclass[14pt]{article}
+\usepackage{amsmath}
+\usepackage{extsizes}
+
+\newcommand\Item[1][]{%
+  \ifx\relax#1\relax  \item \else \item[#1] \fi
+  \abovedisplayskip=0pt\abovedisplayshortskip=0pt~\vspace*{-\baselineskip}}
+  
+%Gummi|065|=)
+\title{\textbf{Mass Balance Equations}}
+\date{}
+\begin{document}
+
+\section*{Mass Balance Equations}
+\thispagestyle{empty}
+
+\begin{enumerate}
+  \item Atmosphere reservoir:
+  \begin{equation*}
+   \begin{split}
+    \frac{d ^cM_a}{d t} = \Big(\frac{^cM_m}{^cM_{m\,p}}\; ^cF_{(m-a)\,p} + \frac{^cM_{c\,c}}{^cM_{c\,c\,p}}\; ^cF_{(c\,c-a)\,p}&\Big)\; \exp\Big(\frac{t_p - t}{t_f}\Big) \\ 
+    &- \frac{^cM_{a}}{\tau_{a - c\,c}} \; \Big(\; or \; \frac{^cM_{a\,t_{1}}}{\tau^{'}_{a - c\,c}} \Big)
+    \end{split}
+  \end{equation*}
+  \item Continental crust reservoir:
+  \begin{equation*}
+   \begin{split}
+    \frac{d ^cM_{c\,c}}{d t} = &\;\frac{^cM_{a}}{\tau_{a - c\,c}} \; \Big(\;or \; \frac{^cM_{a\,t_{1}}}{\tau^{'}_{a - c\,c}} \Big) \\ 
+    &- \; \Big( \,^cF_{(c\,c-a)\,p} + ^cF_{(c\,c-m)\,p} \Big) \; \frac{^cM_{cc}}{^cM_{ccp}} \; \exp\Big(\frac{t_p - t}{t_f}\Big)
+   \end{split} 
+  \end{equation*}
+  
+  \item Mantle reservoir:
+  \begin{equation*}
+    \frac{d ^cM_{m}}{d t} = \;\Big( \,^cF_{(c\,c-m)\,p} \, \frac{^cM_{cc}}{^cM_{ccp}} - \, \frac{^cM_m}{^cM_{m\,p}}\; ^cF_{(m-a)\,p} \, \Big) \; \exp\Big(\frac{t_p - t}{t_f}\Big)
+  \end{equation*}  
+  
+  Also require fluxes to ocean ridges and ocean trenches:
+  \begin{align*}
+    ^cF_{orp}\;(observed) &= \;^cF_{(m-a)\,p} \,+ \,^cF_{(m-m)\,p} \\
+    ^cF_{szp}\;(observed) &= \;^cF_{(c\,c-m)\,p} \,+ \,^cF_{(c\,c-c\,c)\,p} \, + \,^cF_{(m-m)\,p}
+  \end{align*}
+\end{enumerate}
+\end{document}
